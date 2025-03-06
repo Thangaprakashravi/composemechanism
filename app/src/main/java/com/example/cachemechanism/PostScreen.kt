@@ -43,6 +43,7 @@ fun PostItem(post: Post) {
         elevation = CardDefaults.cardElevation(4.dp),
         colors = CardDefaults.cardColors(containerColor = Color.Black)
     ) {
+        Text(text = "ID ${post.id}", modifier = Modifier.padding(16.dp), color = Color.White)
         Text(text = post.title, modifier = Modifier.padding(16.dp), color = Color.White)
         Text(text = post.body, modifier = Modifier.padding(16.dp), color = Color.White)
     }
